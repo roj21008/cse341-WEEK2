@@ -1,0 +1,28 @@
+[{
+    "contact1":{
+        "firstName":"Sarah",
+        "LastName":"Birch",
+        "email":"amazingwoman@test.com", 
+        "favoriteColor":"Green", 
+        "birthday":"12/12/20",
+        "ipadress":"94.121.163.63"        
+    },
+    
+    "contact2":{
+        "firstName":"Jimmy",
+        "LastName":"Carter",
+        "email":"jCarter@test.com", 
+        "favoriteColor":"Purple", 
+        "birthday":"07/12/10",
+        "ipadress":"94.121.163.53"
+    },
+
+    "contact3":{
+        "firstName":"Jimmy",
+        "LastName":"Carter",
+        "email":"jCarter@test.com", 
+        "favoriteColor":"Purple", 
+        "birthday":"07/12/10",
+        "ipadress":"94.121.163.53"
+    }
+}]

@@ -1,0 +1,7 @@
+GET http://localhost:8050/users
+
+###
+GET http://localhost:8050/users/6486f96b09656f66d88b28f3 
+
+###
+GET https://https://assignment-2-pz7i.onrender.com
