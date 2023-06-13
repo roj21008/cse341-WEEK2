@@ -1,5 +1,4 @@
-[{
-    "contact1":{
+[{"_id":"6486f93e09656f66d88b28f1",
         "firstName":"Sarah",
         "LastName":"Birch",
         "email":"amazingwoman@test.com", 
@@ -8,7 +7,7 @@
         "ipadress":"94.121.163.63"        
     },
     
-    "contact2":{
+    {"_id":"6486f95609656f66d88b28f2",
         "firstName":"Jimmy",
         "LastName":"Carter",
         "email":"jCarter@test.com", 
@@ -17,7 +16,7 @@
         "ipadress":"94.121.163.53"
     },
 
-    "contact3":{
+    {"_id":"6486f96b09656f66d88b28f3",
         "firstName":"Jimmy",
         "LastName":"Carter",
         "email":"jCarter@test.com", 
@@ -25,4 +24,4 @@
         "birthday":"07/12/10",
         "ipadress":"94.121.163.53"
     }
-}]
+]

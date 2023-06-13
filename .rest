@@ -1,2 +1,6 @@
-GET http://localhost:1000/users
-
+###
+http://localhost:500/users HTTP/1.1
+###
+GET http://localhost:500/users/6486f93e09656f66d88b28f1  HTTP/1.1
+###
+GET https://https://week2-500.onrender.com HTTP/1.1
