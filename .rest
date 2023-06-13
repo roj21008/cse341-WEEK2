@@ -1,4 +1,2 @@
 GET http://localhost:1000/users
 
-###
-GET https://https://week-2-mongodb-connection.onrender.com
