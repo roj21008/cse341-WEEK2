@@ -4,6 +4,15 @@ const { mongo } = require('mongoose');
 
 const app = express();
 
+//agregado
+/*
+const parser = require('body-parser');
+var cors = require('cors');
+app.use(cors());
+app.use(parser.json());*/
+
+
+
 const port = process.env.PORT || 500;
 
 app.use('/',require('./routes'));
@@ -18,6 +27,7 @@ mongodb.initDb((err) =>{
     }
     }
 );
+
 
 
 
