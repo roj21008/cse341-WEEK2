@@ -19,7 +19,7 @@ const getSingle = async (req,res)=>{
 
 };
 
-const newData =  async (req,res)=>{
+const newData =  async (req,res)=>{//POST
     const added = {
         firstName: req.body.firstName,
         LastName: req.body.LastName,
@@ -37,7 +37,7 @@ const newData =  async (req,res)=>{
        
 };
 
-const updateData =  async (req,res)=>{
+const updateData =  async (req,res)=>{ //PUT
     const userId = new ObjectId(req.params.id);
     const added = {
         firstName: req.body.firstName,
@@ -57,7 +57,7 @@ const updateData =  async (req,res)=>{
        
 };
 
-const deleteData =  async (req,res)=>{
+const deleteData =  async (req,res)=>{ //DELETE
     const userId = new ObjectId(req.params.id);
  
     const result = await mongodb.getDatabase().db().collection('users').deleteOne({_id:userId},true);
