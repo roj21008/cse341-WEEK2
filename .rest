@@ -22,3 +22,37 @@ GET https://week-2-finished.onrender.com/users/6489da4954079ee2cbd9d54f HTTP/1.1
 ###
 GET https://week-2-finished.onrender.com/users/6489da4954079ee2cbd9d550 HTTP/1.1
 
+###
+POST http://localhost:500/newdata HTTP/1.1
+Content-Type: application/json
+
+{
+    
+  "firstName": "Jaquin",
+  "LastName": "Rojas",
+  "email": "bustamAnast@yahoo.es",
+  "favoriteColor": "black",
+  "birthday": "08/07/76",
+   "ipadress": "94.121.163.53"
+
+}
+
+###
+PUT http://localhost:500/updatedata/6489da4954079ee2cbd9d54f HTTP/1.1
+
+Content-Type: application/json
+
+{
+    
+  "firstName": "Sandra",
+  "LastName": "Cabrera",
+  "email": "scabrera@yahoo.es",
+  "favoriteColor": "red",
+  "birthday": "02/12/88",
+   "ipadress": "94.121.163.53"
+
+}
+
+###
+DELETE http://localhost:500/deletedata/6489da4954079ee2cbd9d54f HTTP/1.1
+
