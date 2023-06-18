@@ -10,7 +10,7 @@ exports.create = (req, res) => {
     res.status(400).send({ message: 'Content can not be empty!' });
     return;
   }
-
+ 
   // Create a Temple
   const temple = new Temple({
     temple_id: req.body.temple_id,
