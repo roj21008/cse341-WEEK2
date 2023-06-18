@@ -1,8 +1,11 @@
 const express = require('express');
 const mongodb = require('./data/database');
 const { mongo } = require('mongoose');
-
+//const apidoc = require('./routes/app');
 const app = express();
+const routes = require('./routes/index')
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger-output.json');
 
 //agregado
 
@@ -21,6 +24,10 @@ app.use((req, res, next)=>{
     next();
   
   });
+
+app.use('/', routes);
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 mongodb.initDb((err) =>{
     if (err) {
