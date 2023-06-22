@@ -42,12 +42,12 @@ const newData =  async (req,res)=>{//POST
 const updateData =  async (req,res)=>{ //PUT
     const userId = new ObjectId(req.params.id);
     const added = {
-        firstName: req.body.firstName,
-        LastName: req.body.LastName,
-        email: req.body.email,
-        favoriteColor: req.body.favoriteColor,
-        birthday: req.body.birthday,
-        ipadress:req.body.ipadress 
+      Name: req.body.Name,
+      Capital: req.body.Capital,
+      area: req.body.area,
+      habitants: req.body.habitants,
+      independence: req.body.independence,
+      continent:req.body.continent 
     };
 
     const result = await mongodb.getDatabase().db().collection('countries').replaceOne({_id:userId},added);
