@@ -21,14 +21,16 @@ const getSingleCountry = async (req,res)=>{
 
 const newData =  async (req,res)=>{//POST
     const added = {
-        firstName: req.body.firstName,
-        LastName: req.body.LastName,
-        email: req.body.email,
-        favoriteColor: req.body.favoriteColor,
-        birthday: req.body.birthday,
-        ipadress:req.body.ipadress 
+
+
+        Name: req.body.Name,
+        Capital: req.body.Capital,
+        area: req.body.area,
+        habitants: req.body.habitants,
+        independence: req.body.independence,
+        continent:req.body.continent 
     };
-    const result = await mongodb.getDatabase().db().collection('users').insertOne(added);
+    const result = await mongodb.getDatabase().db().collection('countries').insertOne(added);
     if (result.acknowledged){
         res.status(201).json(result);
       }else{
@@ -48,7 +50,7 @@ const updateData =  async (req,res)=>{ //PUT
         ipadress:req.body.ipadress 
     };
 
-    const result = await mongodb.getDatabase().db().collection('users').replaceOne({_id:userId},added);
+    const result = await mongodb.getDatabase().db().collection('countries').replaceOne({_id:userId},added);
     if (result.modifiedCount > 0){
         res.status(204).send();
       }else{
@@ -60,7 +62,7 @@ const updateData =  async (req,res)=>{ //PUT
 const deleteData =  async (req,res)=>{ //DELETE
     const userId = new ObjectId(req.params.id);
  
-    const result = await mongodb.getDatabase().db().collection('users').deleteOne({_id:userId},true);
+    const result = await mongodb.getDatabase().db().collection('countries').deleteOne({_id:userId},true);
     if (result.deletedCount > 0){
         res.status(200).send();
       }else{
