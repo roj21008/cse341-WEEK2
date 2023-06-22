@@ -1,0 +1,59 @@
+[{
+        "Name":"Peru",
+        "Capital":"Lima",
+        "area":1.285 , 
+        "habitants":33000000, 
+        "independence":"07/28",
+        "continent":"Southamerica"        
+    },
+    {
+        "Name":"Colombia",
+        "Capital":"Bogota",
+        "area":1.139 , 
+        "habitants":51000000, 
+        "independence":"07/20",
+        "continent":"Southamerica"        
+    },
+    {
+        "Name":"Canada",
+        "Capital":"Lima",
+        "area":9.985 , 
+        "habitants":38000000, 
+        "independence":"07/01",
+        "continent":"Northamerica"        
+    },
+    {
+        "Name":"Mexico",
+        "Capital":"Lima",
+        "area":1.973 , 
+        "habitants":126000000, 
+        "independence":"09/16",
+        "continent":"Northamerica"        
+    },
+    {
+        "Name":"Ecuador",
+        "Capital":"Quito",
+        "area":0.256 , 
+        "habitants":18000000, 
+        "independence":"08/10",
+        "continent":"Southamerica"        
+    },
+    {
+        "Name":"Honduras",
+        "Capital":"Lima",
+        "area":0.112 , 
+        "habitants":10000000, 
+        "independence":"11/15",
+        "continent":"Central america"        
+    },
+    {
+        "Name":"Argentina",
+        "Capital":"Buenos Aires",
+        "area":2.780 , 
+        "habitants":46000000, 
+        "independence":"05/25",
+        "continent":"Southamerica"        
+    }
+
+    
+]

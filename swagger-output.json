@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API",
+    "title": "My API COUNTRIES",
     "description": "Description",
     "version": "1.0.0"
   },
@@ -11,7 +11,7 @@
     "https"
   ],
   "paths": {
-    "/users": {
+    "/countries": {
       "get": {
         "description": "",
         "produces": [
@@ -25,7 +25,7 @@
         }
       }
     },
-    "/users/{id}": {
+    "/countries/{id}": {
       "get": {
         "description": "",
         "produces": [
