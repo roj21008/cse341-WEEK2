@@ -14,23 +14,13 @@
     "/countries": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
+        "responses": {}
       }
     },
     "/countries/{id}": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "id",
@@ -39,11 +29,7 @@
             "type": "string"
           }
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
+        "responses": {}
       }
     },
     "/newdata": {
@@ -56,22 +42,22 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "Name": {
                   "example": "any"
                 },
-                "LastName": {
+                "Capital": {
                   "example": "any"
                 },
-                "email": {
+                "area": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "habitants": {
                   "example": "any"
                 },
-                "birthday": {
+                "independence": {
                   "example": "any"
                 },
-                "ipadress": {
+                "continent": {
                   "example": "any"
                 }
               }
