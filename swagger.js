@@ -5,7 +5,7 @@ const doc = {
     title: 'My API COUNTRIES',
     description: 'Description',
   },
-  host: 'assignment4-l3id.onrender.com',
+  host: 'assigment5.onrender.com',
   schemes: ['https'],
 };
 
