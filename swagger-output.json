@@ -104,22 +104,22 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "Name": {
                   "example": "any"
                 },
-                "LastName": {
+                "Capital": {
                   "example": "any"
                 },
-                "email": {
+                "area": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "habitants": {
                   "example": "any"
                 },
-                "birthday": {
+                "independence": {
                   "example": "any"
                 },
-                "ipadress": {
+                "continent": {
                   "example": "any"
                 }
               }
