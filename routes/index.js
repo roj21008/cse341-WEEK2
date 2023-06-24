@@ -3,9 +3,11 @@ const router = express.Router();
 
 const usersController= require('../controllers/users');
 
+const validator = require("../middleware/validate")
+
 router.get('/countries',usersController.getAllCountries);
 router.get('/countries/:id' ,usersController.getSingleCountry);
-router.post('/newdata' ,usersController.newData);
+router.post('/newdata' ,validator.saveCountry,usersController.newData);
 router.put('/updatedata/:id' ,usersController.updateData);
 router.delete('/deletedata/:id' ,usersController.deleteData);
 

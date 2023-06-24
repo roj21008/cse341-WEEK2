@@ -1,12 +1,16 @@
 const validator = require('../helpers/validate');
 
-const saveContact = (req, res, next) => {
+const saveCountry = (req, res, next) => {
   const validationRule = {
-    firstName: 'required|string',
-    lastName: 'required|string',
-    email: 'required|email',
-    favoriteColor: 'required|string',
-    birthday: 'string'
+
+ 
+
+    Name:"required|string",
+    Capital:"required|string",
+    area:"required|string", 
+    habitants:"required|integer", 
+    independence:"required|string",
+    continent:"required|string" 
   };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
@@ -22,5 +26,5 @@ const saveContact = (req, res, next) => {
 };
 
 module.exports = {
-  saveContact
+  saveCountry
 };

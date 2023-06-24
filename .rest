@@ -1,4 +1,29 @@
 ###
 GET http://localhost:500/countries     
 
+###
+POST http://localhost:500/newdata  HTTP/1.1
+content-type: application/json
 
+{
+   "Name": "",
+    "Capital": "",
+    "area": "1.26",
+    "habitants": 3300000,
+    "independence": "07/28",
+    "continent": "Europe"
+  
+}
+
+###
+PUT http://localhost:500/updatedata/64977117385c4557dac942d0  HTTP/1.1
+content-type: application/json
+
+{
+     "Name": "Alemania",
+    "Capital": "Berlin",
+    "area": "area",
+    "habitants": "hab",
+    "independence": "07/28",
+    "continent": "Southamerica"
+}
