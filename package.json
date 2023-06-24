@@ -18,9 +18,11 @@
     "cors": "^2.8.5",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
+    "express-validator": "^7.0.1",
     "mongodb": "^5.6.0",
     "mongoose": "^7.2.3",
-    "swagger-ui-express": "^4.6.3"
+    "swagger-ui-express": "^4.6.3",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
     "eslint": "^8.42.0",
