@@ -8,7 +8,7 @@ content-type: application/json
 {
    "Name": "",
     "Capital": "",
-    "area": "1.26",
+    "area": "",
     "habitants": 3300000,
     "independence": "07/28",
     "continent": "Europe"
@@ -16,14 +16,18 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:500/updatedata/64977117385c4557dac942d0  HTTP/1.1
+PUT http://localhost:500/updatedata/""  HTTP/1.1
 content-type: application/json
 
 {
-     "Name": "Alemania",
-    "Capital": "Berlin",
-    "area": "area",
+     "Name": "",
+    "Capital": "Varsovia",
+    "area": "hab",
     "habitants": "hab",
     "independence": "07/28",
-    "continent": "Southamerica"
+    "continent": "Europe"
 }
+
+###
+
+DELETE http://localhost:500/deletedata/64976e6fe23f55c70e5a660e  HTTP/1.1

@@ -4,20 +4,24 @@ const ObjectId = require('mongodb').ObjectId;
 const getAllCountries = async (req,res)=>{
     const result = await mongodb.getDatabase().db().collection('countries').find();
     result.toArray().then((users)=>{
-    res.setHeader('Content-Type','application/json');
+   try{
+      res.setHeader('Content-Type','application/json');
     res.status(200).json(users);
-});
-};
+   }catch(err){
+    res.status(400).json(err.message)
+}})};
+
 const getSingleCountry = async (req,res)=>{
     const userId = new ObjectId(req.params.id);
     console.log(userId);
     const result = await mongodb.getDatabase().db().collection('countries').find({_id:userId});
     result.toArray().then((users)=>{
+      try{
     res.setHeader('Content-Type','application/json');
     res.status(200).json(users[0]);    
-    });
-
-};
+  }catch(err){
+    res.status(400).json(err.message)
+}})};
 
 const newData =  async (req,res)=>{//POST
     const added = {

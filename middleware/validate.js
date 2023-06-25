@@ -7,7 +7,7 @@ const saveCountry = (req, res, next) => {
 
     Name:"required|string",
     Capital:"required|string",
-    area:"required|string", 
+    area:"required|integer", 
     habitants:"required|integer", 
     independence:"required|string",
     continent:"required|string" 

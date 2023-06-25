@@ -8,7 +8,7 @@ const validator = require("../middleware/validate")
 router.get('/countries',usersController.getAllCountries);
 router.get('/countries/:id' ,usersController.getSingleCountry);
 router.post('/newdata' ,validator.saveCountry,usersController.newData);
-router.put('/updatedata/:id' ,usersController.updateData);
+router.put('/updatedata/:id',validator.saveCountry,usersController.updateData);
 router.delete('/deletedata/:id' ,usersController.deleteData);
 
 
