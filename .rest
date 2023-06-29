@@ -1,6 +1,10 @@
 ###
 GET http://localhost:500/countries     
 
+
+###
+GET http://localhost:500/countries/6493c50ece1a3c28ff81832    
+
 ###
 POST http://localhost:500/newdata  HTTP/1.1
 content-type: application/json
