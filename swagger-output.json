@@ -5,13 +5,20 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "assignment6.onrender.com",
+  "host": "localhost:500",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
-    "/countries": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/countries/": {
       "get": {
         "description": "",
         "produces": [
@@ -26,33 +33,7 @@
             "description": "Bad Request"
           }
         }
-      }
-    },
-    "/countries/{id}": {
-      "get": {
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
-          }
-        }
-      }
-    },
-    "/newdata": {
+      },
       "post": {
         "description": "",
         "parameters": [
@@ -88,16 +69,35 @@
           "201": {
             "description": "Created"
           },
-          "412": {
-            "description": "Precondition Failed"
-          },
           "500": {
             "description": "Internal Server Error"
           }
         }
       }
     },
-    "/updatedata/{id}": {
+    "/countries/{id}": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
       "put": {
         "description": "",
         "parameters": [
@@ -139,16 +139,11 @@
           "204": {
             "description": "No Content"
           },
-          "412": {
-            "description": "Precondition Failed"
-          },
           "500": {
             "description": "Internal Server Error"
           }
         }
-      }
-    },
-    "/deletedata/{id}": {
+      },
       "delete": {
         "description": "",
         "parameters": [

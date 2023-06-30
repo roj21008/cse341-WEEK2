@@ -1,15 +1,18 @@
 const express = require('express');
 const router = express.Router();
+const passport = require('passport');
+router.use('/',require("./app"));
+router.use('/countries',require("./countries"));
 
-const usersController= require('../controllers/users');
 
-const validator = require("../middleware/validate")
+router.get('/login', passport.authenticate('github'), (req, res) => {});
 
-router.get('/countries',usersController.getAllCountries);
-router.get('/countries/:id' ,usersController.getSingleCountry);
-router.post('/newdata' ,validator.saveCountry,usersController.newData);
-router.put('/updatedata/:id',validator.saveCountry,usersController.updateData);
-router.delete('/deletedata/:id' ,usersController.deleteData);
+router.get('/logout', function(req, res, next){
+    req.logout(function(err){
+        if (err) { return next(err);}
+        res.direct('/')
+    });
+});
 
 
 module.exports = router;

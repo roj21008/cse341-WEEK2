@@ -1,30 +1,30 @@
 ###
-GET http://localhost:500/countries     
+GET http://localhost:500/countries
 
 
 ###
-GET http://localhost:500/countries/6493c50ece1a3c28ff81832    
+GET http://localhost:500/countries/6493c50ece1a3c28ff818323    
 
 ###
-POST http://localhost:500/newdata  HTTP/1.1
+POST http://localhost:500/countries  HTTP/1.1
 content-type: application/json
 
 {
-   "Name": "",
-    "Capital": "",
-    "area": "",
+   "Name": "Guyana",
+    "Capital": "aaaaa",
+    "area": 55555,
     "habitants": 3300000,
     "independence": "07/28",
-    "continent": "Europe"
+    "continent": "Southamerica"
   
 }
 
 ###
-PUT http://localhost:500/updatedata/""  HTTP/1.1
+PUT http://localhost:500/countries/649e11efa9d7ff18177db6a4  HTTP/1.1
 content-type: application/json
 
 {
-     "Name": "",
+     "Name": "Polonia",
     "Capital": "Varsovia",
     "area": "hab",
     "habitants": "hab",
@@ -34,4 +34,4 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:500/deletedata/64976e6fe23f55c70e5a660e  HTTP/1.1
+DELETE http://localhost:500/countries/649e11dea9d7ff18177db6a3  HTTP/1.1
