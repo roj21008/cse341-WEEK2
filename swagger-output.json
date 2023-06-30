@@ -5,7 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:500",
+  "host": "assignment7.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"

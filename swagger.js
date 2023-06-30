@@ -5,7 +5,7 @@ const doc = {
     title: 'My API COUNTRIES',
     description: 'Description',
   },
-  host: 'localhost:500',
+  host: 'assignment7.onrender.com',
   schemes: ['http'],
 };
 
