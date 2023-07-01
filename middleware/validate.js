@@ -1,9 +1,7 @@
 const validator = require('../helpers/validate');
 
-const saveCountry = (req, res, next) => {
+const validateCountry = (req, res, next) => {
   const validationRule = {
-
- 
 
     Name:"required|string",
     Capital:"required|string",
@@ -25,6 +23,30 @@ const saveCountry = (req, res, next) => {
   });
 };
 
+
+const validateFamily = (req, res, next) => {
+  const validationRule = {
+
+    Name:"required|string",
+    Lastname:"required|string",
+    birth:"required|string", 
+    marriage:"required|string", 
+    children:"required|integer",
+    career:"required|string" 
+  };
+  validator(req.body, validationRule, {}, (err, status) => {
+    if (!status) {
+      res.status(412).send({
+        success: false,
+        message: 'Validation failed',
+        data: err
+      });
+    } else {
+      next();
+    }
+  });
+};
+
 module.exports = {
-  saveCountry
+  validateCountry,validateFamily
 };
