@@ -12,6 +12,23 @@ const GitHubStrategy = require('passport-github2').Strategy;
 
 const port = process.env.PORT || 500;
 const bodyParser = require('body-parser');
+
+/*
+const ui = SwaggerUI({...})
+// Method can be called in any place after calling constructor SwaggerUIBundle
+ui.initOAuth({
+    clientId: "your-client-id",
+    clientSecret: "your-client-secret-if-required",
+    realm: "your-realms",
+    appName: "your-app-name",
+    scopeSeparator: " ",
+    scopes: "openid profile",
+    additionalQueryStringParams: {test: "hello"},
+    useBasicAuthenticationWithAccessCodeGrant: true,
+    usePkceWithAuthorizationCodeGrant: true
+  })*/
+
+
 var cors = require('cors');
 app.use(cors());
 app.use(bodyParser.json());
