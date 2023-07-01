@@ -11,8 +11,6 @@ const session = require('express-session');
 const GitHubStrategy = require('passport-github2').Strategy;
 
 const port = process.env.PORT || 500;
-//agregado
-
 const bodyParser = require('body-parser');
 var cors = require('cors');
 app.use(cors());

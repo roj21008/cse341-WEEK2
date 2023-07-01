@@ -15,7 +15,7 @@ POST http://localhost:500/countries  HTTP/1.1
 content-type: application/json
 
 {
-   "Name": "Guyana",
+   "Name": "suriname",
     "Capital": "aaaaa",
     "area": 55555,
     "habitants": 3300000,
@@ -23,6 +23,21 @@ content-type: application/json
     "continent": "Southamerica"
   
 }
+
+
+###
+POST http://localhost:500/family  HTTP/1.1
+content-type: application/json
+
+{
+    "Name":"Julio",
+    "Lastname":"Hernandez Lozano",
+    "birth":"28/07/1921", 
+    "marriage":"2006", 
+    "children":7,
+    "career":""        
+}
+
 
 ###
 PUT http://localhost:500/countries/649e11efa9d7ff18177db6a4  HTTP/1.1
