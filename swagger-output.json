@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "My API ",
-    "description": "Description",
+    "description": "Family and countries",
     "version": "1.0.0"
   },
   "host": "assignment7.onrender.com",
