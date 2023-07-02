@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API COUNTRIES",
-    "description": "Description",
+    "title": "My API REST",
+    "description": "FAMILY AND COUNTRIES",
     "version": "1.0.0"
   },
   "host": "assignment7.onrender.com",
@@ -11,28 +11,7 @@
     "https"
   ],
   "paths": {
-    "/login": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
-      }
-    },
-    "/logout": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
-      }
-    },
-    "/countries/": {
+     "/countries/": {
       "get": {
         "description": "",
         "produces": [
