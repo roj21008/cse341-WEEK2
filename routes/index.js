@@ -6,7 +6,7 @@ router.use('/countries',require("./countries"));
 router.use('/family',require("./family"));
 
 
-router.get('/login8', passport.authenticate('github'), (req, res) => {});
+router.get('/login', passport.authenticate('github'), (req, res) => {});
 
 router.get('/logout', function(req, res, next){
     req.logout(function(err){
