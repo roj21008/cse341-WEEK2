@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My API REST",
-    "description": "FAMILY AND COUNTRIES",
+    "title": "My API COUNTRIES",
+    "description": "Description",
     "version": "1.0.0"
   },
   "host": "assignment7.onrender.com",
@@ -11,7 +11,28 @@
     "https"
   ],
   "paths": {
-     "/countries/": {
+    "/login": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/logout": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/countries/": {
       "get": {
         "description": "",
         "produces": [
@@ -279,19 +300,19 @@
                 "Name": {
                   "example": "any"
                 },
-                "Capital": {
+                "Lastname": {
                   "example": "any"
                 },
-                "area": {
+                "birth": {
                   "example": "any"
                 },
-                "habitants": {
+                "marriage": {
                   "example": "any"
                 },
-                "independence": {
+                "children": {
                   "example": "any"
                 },
-                "continent": {
+                "career": {
                   "example": "any"
                 }
               }

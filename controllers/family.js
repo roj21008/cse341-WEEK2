@@ -46,11 +46,11 @@ const updateFamily =  async (req,res)=>{ //PUT
     const userId = new ObjectId(req.params.id);
     const added = {
       Name: req.body.Name,
-      Capital: req.body.Capital,
-      area: req.body.area,
-      habitants: req.body.habitants,
-      independence: req.body.independence,
-      continent:req.body.continent 
+      Lastname: req.body.Lastname,
+      birth: req.body.birth,
+      marriage: req.body.marriage,
+      children: req.body.children,
+      career:req.body.career 
     };
 
     const result = await mongodb.getDatabase().db().collection('family').replaceOne({_id:userId},added);
