@@ -4,6 +4,7 @@ const { mongo } = require('mongoose');
 //const apidoc = require('./routes/app');
 const app = express();
 const routes = require('./routes/index')
+//const countries = require('./routes/countries')
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger-output.json');
 const passport = require('passport');
@@ -42,9 +43,9 @@ app.use((req, res, next)=>{
 app.use(cors({methods:['GET','POST','DELETE','UPDATE','PUT','PATCH']})) ; 
 app.use(cors({origin:'*'})) ;
 
-//app.use('/',require('./routes'));
-app.use('/', routes);
 
+app.use('/', routes);
+//app.use('/',countries);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 passport.use(new GitHubStrategy({
@@ -89,7 +90,7 @@ mongodb.initDb((err) =>{
 );
 
 
-
+module.exports = app;
 
 
 
